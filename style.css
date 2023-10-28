@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.main {
+    background-color: antiquewhite;
+    border-radius: 14px;
+    height: 73%;
+    width: 92%;
+    box-shadow: 9px 9px 20px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+.same {
+    /* height: 32%;
+    width: 49%; */
+    border-radius: 14px;
+    border: 1.5px solid whitesmoke;
+    font-weight: 900;
+    font-size: x-large;
+    background-color: aquamarine;
+    transition: all 3.4s ease;
+    margin: 4px 9px 4px 9px;
+}
+
+.same:hover {
+    transform: scale(1.2); /* Enlarge the hovered box */
+}
+
+.main:hover .same:not(:hover) {
+    transform: scale(0.8); /* Shrink other boxes on main hover except the one being hovered */
+}
+
+
+.title {
+    font-family: "Californian FB", cursive; /* Use Californian font or a similar cursive font */
+    font-size: 24px;
+    margin-bottom: auto; /* Center title with equal space from the bottom */
+}
